@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:text-white hover:underline underline-offset-4 transition-all;
+  }
+}
+@media screen and (min-width: 640px) {
+  /* CSS */
+  /* .sub-title {
+        color: red;
+    } */
+}
+/* screen < 640px */
+@media screen and (max-width: 640px) {
+  /* CSS */
+  .sub-title {
+    color: red;
+  }
+}
