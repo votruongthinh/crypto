@@ -22,7 +22,7 @@
         <header class="py-8">
           <div class="container flex justify-between items-center">
             <div class="text-2xl font-semibold text-white">Crypto Cyber</div>
-            <div class="flex gap-5">
+            <div class="gap-5 hidden md:flex">
               <!-- nav -->
               <nav class="w-full z-20 top-0 start-0">
                 <a
@@ -47,11 +47,16 @@
               </nav>
             </div>
             <div>
-              <button
-                class="bg-[#1C4ED8] py-2 px-5 rounded-md text-white font-semibold hover:text-red-500 transition-all ease-linear"
-              >
-                Get Stated
-              </button>
+              <di class="flex items-center gap-4 px-4">
+                <button
+                  class="bg-[#1C4ED8] py-2 px-5 rounded-md text-white font-semibold hover:text-red-500 transition-all ease-linear"
+                >
+                  Get Stated
+                </button>
+                <div class="text-white md:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </di>
             </div>
           </div>
         </header>
@@ -59,8 +64,8 @@
 
       <!-- ABOUT -->
       <section id="about" class="py-20">
-        <div class="container flex gap-4 items-center gap-4">
-          <div class="w-1/2 text-white space-y-10">
+        <div class="container flex flex-col gap-4 items-center gap-4">
+          <div class="w-1/2 text-white space-y-10 lg:order-2">
             <h2 class="text-8xl font-semibold">
               Trsuted & Secure
               <span
@@ -78,12 +83,14 @@
             >
               Start Trading
             </button>
-            <p class="mt-10 text-6xl">A+ Rating</p>
+            <p class="mt-10 text-6xl md:text-red-500 lg:text-green-500">
+              A+ Rating
+            </p>
             <p class="mt-10 text-[#8888]">
               Avg rating 4.8 makes us world most best apps.
             </p>
           </div>
-          <div class="w-1/2">
+          <div class="w-1/2 lg:order-1">
             <img class="w-full" src="./assets/images/bank.png" alt="" />
           </div>
         </div>
@@ -115,7 +122,7 @@
               Contact
             </p>
           </div>
-          <div class="grid grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             <div
               class="flex justify-center items-center flex-col bg-[rgba(255,255,255,0.1)] p-5 rounded-xl"
             >
@@ -240,10 +247,10 @@
               Home
             </p>
             <p class="link">Pricing</p>
-            <p>About Us</p>
-            <p>Careers</p>
-            <p>Features</p>
-            <p>Demo the product</p>
+            <p class="link">About Us</p>
+            <p class="link">Careers</p>
+            <p class="link">Features</p>
+            <p class="link">Demo the product</p>
           </div>
           <div>
             <p>Legal</p>

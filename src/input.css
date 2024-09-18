@@ -7,16 +7,28 @@
     @apply cursor-pointer hover:text-white hover:underline underline-offset-4 transition-all;
   }
 }
+/* break point : 640px (sm) , 768px (md),1024px (lg) , 1280px (xl), 1536px (2xl) */
+
 @media screen and (min-width: 640px) {
-  /* CSS */
-  /* .sub-title {
-        color: red;
-    } */
-}
-/* screen < 640px */
-@media screen and (max-width: 640px) {
   /* CSS */
   .sub-title {
     color: red;
   }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+/* screen < 640px */
+@media screen and (min-width: 768px) {
+  /* CSS */
+  .sub-title {
+    color: rgb(255, 0, 183);
+  }
+}
+@media screen and (max-width: 640px) {
+  /* CSS */
+  /* .sub-title {
+    color: red;
+  } */
 }
