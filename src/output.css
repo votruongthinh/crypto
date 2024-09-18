@@ -636,14 +636,6 @@ video {
   z-index: 20;
 }
 
-.order-1 {
-  order: 1;
-}
-
-.order-2 {
-  order: 2;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
